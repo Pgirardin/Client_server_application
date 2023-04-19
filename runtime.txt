@@ -1,2 +1,45 @@
 python-3.8.2
 0xF961623e9c92c8b98e476Ee52e89631DE5fD46A9
+
+
+
+pgirrar@pgirrar:~$ docker --version
+Docker version 23.0.3, build 3e7cbfd
+pgirrar@pgirrar:~$ sudo docker images
+[sudo] password for pgirrar: 
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+pgirrar@pgirrar:~$ sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-compose-plugin
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  cpu-checker docker-ce-rootless-extras ibverbs-providers ipxe-qemu ipxe-qemu-256k-compat-efi-roms libaio1 libcacard0 libdaxctl1 libdecor-0-0 libdecor-0-plugin-1-cairo libfdt1 libgfapi0 libgfrpc0
+  libgfxdr0 libglusterfs0 libibverbs1 libiscsi7 libndctl6 libpmem1 libpmemobj1 libqrencode4 librados2 librbd1 librdmacm1 libsdl2-2.0-0 libslirp0 libspice-server1 liburing2 libusbredirparser1
+  libvirglrenderer1 msr-tools ovmf pass pigz qemu-block-extra qemu-system-common qemu-system-data qemu-system-gui qemu-system-x86 qemu-utils qrencode seabios slirp4netns tree uidmap xclip
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  containerd.io* docker-ce* docker-ce-cli* docker-compose-plugin* docker-desktop*
+0 upgraded, 0 newly installed, 5 to remove and 92 not upgraded.
+After this operation, 305 MB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 223649 files and directories currently installed.)
+Removing docker-ce (5:23.0.3-1~ubuntu.22.04~jammy) ...
+Warning: Stopping docker.service, but it can still be activated by:
+  docker.socket
+Removing containerd.io (1.6.20-1) ...
+Removing docker-desktop (4.18.0-104112) ...
+Reloading systemd daemon for logged in users
+Done reloading systemd daemon for logged in users
+Removing docker-ce-cli (5:23.0.3-1~ubuntu.22.04~jammy) ...
+Removing docker-compose-plugin (2.17.2-1~ubuntu.22.04~jammy) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+(Reading database ... 223289 files and directories currently installed.)
+Purging configuration files for docker-desktop (4.18.0-104112) ...
+Reloading systemd daemon for logged in users
+Done reloading systemd daemon for logged in users
+dpkg: warning: while removing docker-desktop, directory '/usr/local' not empty so not removed
+Purging configuration files for docker-ce (5:23.0.3-1~ubuntu.22.04~jammy) ...
+Purging configuration files for containerd.io (1.6.20-1) ...
